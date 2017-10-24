@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct{
+	int tarefa;
+	int Ti;
+	int Tf;
+}tarefas;
+
+void copiastruct(tarefas *A, tarefas *B, int tam){
+	int cont;
+	for(cont=0;cont<tam;cont++){
+		B[cont]=A[cont];
+	}
+}
+void substitui(tarefas *A, int tar, int *tam){
+	int cont=0;
+	while(A[cont].tarefa!=tar){
+		cont++;
+	}
+	A[cont]=A[*tam];
+	*tam=*tam-1;
+}
+
+int escalonamentotarefas(tarefas *T, int tam, int tempo){
+	int cont, inicio, melhor, contTar,cont4=0, cont2, melhorTar[tam], vetTar[tam], menorfinal, cont3=0;
+	
+	tarefas Aux[tam];
+	copiastruct(T,Aux,tam);
+
+	cont=0;
+	melhor=0;
+	while(tam>0){
+		while(cont3<tam){
+			while(cont<tam){
+				cont2=0;
+				contTar=1;
+				menorfinal=99;
+				cont4=0;
+				while(cont2<tam){
+					if(T[cont4].Tf==T[cont2].Ti && T[cont2].Tf<=tempo){
+						vetTar[contTar-1]=T[cont4].tarefa;
+						vetTar[contTar]=T[cont2].tarefa;
+						contTar++;
+						cont4=cont2;
+						//menorfinal=T[cont2].Tf-T[cont2].Ti;
+					}
+					cont2++;
+				}
+				cont++;
+			}
+			if(contTar>melhor){
+					melhor=contTar;
+				for(cont2=0;cont2<contTar;cont2++){
+					melhorTar[cont2]=vetTar[cont2];
+
+				}
+			}
+		cont3++;
+		}
+		for(cont2=0;cont2<contTar;cont2++){
+			sbustitui(T,melhorTar[cont2],&tam);
+		}
+
+	}
+
+
+	printf("numero de tarefas: %d\n",melhor);
+	for(cont2=0;cont2<melhor;cont2++){
+		printf("%d ",melhorTar[cont2]);
+	}
+	return contTar;
+}
+
+
+
+int main(void){	
+	int tam, tempo, cont2;
+	scanf("%d %d",&tam,&tempo);
+
+	tarefas Tezaopia[tam];
+
+	for(cont2=0;cont2<tam;cont2++){
+		scanf("%d %d %d",&Tezaopia[cont2].tarefa,&Tezaopia[cont2].Ti,&Tezaopia[cont2].Tf);
+	}
+	/*for(cont2=0;cont2<tam;cont2++){
+		printf("%d %d %d\n",Tezaopia[cont2].tarefa,Tezaopia[cont2].Ti,Tezaopia[cont2].Tf);
+	}*/
+	tam=escalonamentotarefas(Tezaopia,tam,tempo);
+	return 0;
+}

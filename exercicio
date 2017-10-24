@@ -1,0 +1,22 @@
+1)
+	a) 15
+	b) 63
+	c) 78
+	d) n*n
+2) 
+	a) como 5n eh menor que 4*n*n--> o n aparece duas vezes na segunda equacao fazendo ela sempre possuir valores maiores exceto no caso inicial de 1.
+	b) como a primeira equacao pode ser escrita da seguinde forma: 2*2*n*n | e a segunda equacao 2^n/2 --> no inicio a primeira equacao sera maior... porem ao valor
+	de: n=10 a segunda equacao ultrapassa a primeira e sera sempre maior.
+
+3) 
+	a) O(2n^3)
+	b) O(n)
+	c) O(n^2)
+	d) O(n)
+4)
+	a) O(n^2)
+	b) O(n^3)
+	c) O(n^2)
+
+5)
+	

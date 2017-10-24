@@ -1,0 +1,18 @@
+|tamanho: 2 | iteracoes: 3 | tempo: 0.000000
+
+|tamanho: 20 | iteracoes: 1048575 | tempo: 0.016000
+
+|tamanho: 20 | iteracoes: 1048575 | tempo: 0.005000
+
+|tamanho: 25 | iteracoes: 33554431 | tempo: 0.157000
+
+|tamanho: 30 | iteracoes: 1073741823 | tempo: 5.035000
+
+|tamanho: 31 | iteracoes: 2147483647 | tempo: 10.048000
+
+|tamanho: 32 | iteracoes: -1 | tempo: 20.104000
+
+|tamanho: 33 | iteracoes: -1 | tempo: 40.438000
+
+|tamanho: 35 | iteracoes: -1 | tempo: 160.626999
+

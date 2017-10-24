@@ -1,0 +1,58 @@
+EXERCICIO1-
+
+
+1)
+a) 0+1+2+3+4+5 = 15;
+b) 2^0 + 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 63;
+c) (0+2^0) + (1+2^1) + (2+2^2) + (3+2^3) + (4+2^4) + (5+2^5) = 15+63 = 78;
+d) a soma depende do valor dado... exemplo. se o valor foi 2 fica |  2+2=4|   se o valor for 5| 5+5+5+5+5=25; 
+vai ser uma funcao de soma com o tamanho de valores a serem somados sera o mesmo q o valor dado...
+
+
+2) 
+
+a)    |5n | 4n^2
+n=0   |0  | 0
+n=1   |5  | 4
+n=2   |10 | 16
+n=3   |15 | 36
+n=4   |20 | 64
+
+apartir de n=2 para todo n f(n)=5n eh menor!!!
+	5n<4n^2
+
+b)   |2^(n-1)  | 4n^2 
+n=0  |1/2      | 0
+n=1  |1        | 4
+n=2  |2        | 16
+n=3  |4        | 36
+n=4  |8        | 64
+n=5  |16       | 100
+n=6  |32       | 144
+n=7  |64       | 196
+n=8  |128      | 256
+n=9  |256      | 324
+n=10 |512      | 400
+
+
+	para n>10 .. a funcao eh CAS de 4n^2
+	2^(n-1) > 4n^2
+
+
+3)
+
+a) O(n^3)
+b) O(n)
+c) O(N^2)
+d) O( nlog(n) )
+
+
+4)
+
+a) O( n^3 )
+b) O( n^3 )
+c) n^3+n == O(n^3)
+
+
+
+

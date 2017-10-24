@@ -1,0 +1,21 @@
+1 
+00: 00: 00,735 -> 00: 00: 02,034 
+Morty, com pressa! 
+ 
+2 
+00: 00: 02,036 -> 00: 00: 03,836 
+Devolva a tartaruga da verdade! 
+ 
+3 
+00: 00: 03,838 -> 00: 00: 06,238 
+Morty, seja lá o que fizer, 
+não deixe cair a Truta da Verdade! 
+ 
+4 
+00: 00: 06,240 -> 00: 00: 07,539 
+Também é realmente importante, 
+ 
+5 
+00: 00: 07,541 -> 00: 00: 09,141 
+o que quer que você faça, 
+Não olhe nos olhos dela!

@@ -1,0 +1,16 @@
+#include<stdlib.h>
+
+int rubikdesatanas(int m, int n, int p){
+	int aux;
+	aux=(m-2)*(n-2)*(p-2);
+	return aux;
+}
+
+int main(void){
+
+	int m=4, n=4, p=3;
+	int aux;
+	aux=rubikdesatanas(m,n,p);
+	printf("%d\n",aux);
+return 0;
+}

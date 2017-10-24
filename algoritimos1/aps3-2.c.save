@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+struct viagem{
+	char estrada;
+	float km;
+	float pedagio;
+	float consumo;
+};
+
+struct mochilao{
+	float pedagio;
+	float consumo;
+};
+
+int main(void){
+	struct viagem escolha[4];
+	struct mochilao valores[4];
+	int n;
+	for(n=0;n<4;n++)
+	{
+		scanf("%c",&escolha[n].estrada);
+		scanf("%f %f %f",&escolha[n].km, &escolha[n].pedagio, &escolha[n].consumo);
+	}
+        printf("estrada  |   km total    |  distancia  |  consumo\n");
+	for(n=0;n<4;n++)
+	{
+		printf("%c       |      %.2f       |     %.2f      |   %.2f\n",escolha[n].estrada, escolha[n].km, escolha[n].pedagio, escolha[n].consumo);
+	}
+
+return 0;
+}

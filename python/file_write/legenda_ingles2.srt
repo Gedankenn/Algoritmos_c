@@ -1,0 +1,21 @@
+﻿1
+00:00:00,735 --> 00:00:02,034
+Morty, hurry!
+
+2
+00:00:02,036 --> 00:00:03,836
+Return the Truth Tortoise!
+
+3
+00:00:03,838 --> 00:00:06,238
+Morty, whatever you do,
+don't drop the Truth Tortoise!
+
+4
+00:00:06,240 --> 00:00:07,539
+Also really important,
+
+5
+00:00:07,541 --> 00:00:09,141
+whatever you do,
+don't look into its eyes!
