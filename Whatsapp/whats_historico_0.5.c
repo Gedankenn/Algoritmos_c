@@ -84,7 +84,7 @@ int main(void){
 	char fdp[50];
 	int mescp, anocp, diacp;
 
-	data=fopen("karol.txt","r");
+	data=fopen("historico.txt","r");
 	fscanf(data, "%*[^\n]\n", NULL);
 	fscanf(data, "%*[^\n]\n", NULL);
 	fscanf(data,"%d/%d/%d, %d:%d - %s",&dia,&mes,&ano,&hora,&minuto,fdp);
